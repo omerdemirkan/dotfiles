@@ -13,7 +13,8 @@ null_ls.setup({
 	sources = {
 		formatting.prettier,
 		formatting.stylua,
-		formatting.autopep8,
+		formatting.black,
+    formatting.flake8,
 		diagnostics.eslint_d,
 	},
 	-- configure format on save
