@@ -116,6 +116,8 @@ return packer.startup(function(use)
 	-- For github permalinks
 	use("ruifm/gitlinker.nvim")
 
+	use("github/copilot.vim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

@@ -93,6 +93,9 @@ vim.api.nvim_set_keymap(
 	{}
 )
 
+map("i", "<C-h>", "<Plug>(copilot-next)")
+map("i", "<C-l>", "<Plug>(copilot-previous)")
+
 -- Harpoon
 local mark_status, mark = pcall(require, "harpoon.mark")
 local ui_status, ui = pcall(require, "harpoon.ui")
