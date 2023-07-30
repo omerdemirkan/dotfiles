@@ -112,7 +112,7 @@ lspconfig.gopls.setup({
 	on_attach = on_attach,
 })
 
--- configure golang server
+-- configure python server
 lspconfig.pyright.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,

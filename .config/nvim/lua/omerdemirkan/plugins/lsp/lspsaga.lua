@@ -15,6 +15,6 @@ saga.setup({
 		enable = true,
 		separator = "  ",
 		color_mode = false,
-		folder_level = 3,
+		folder_level = 5,
 	},
 })

@@ -36,10 +36,11 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
 	ensure_installed = {
 		-- https://github.com/jay-babu/mason-null-ls.nvim#available-null-ls-sources
+		-- "black",
+		"eslint_d",
+		"flake8",
+		"mypy",
 		"prettier",
 		"stylua",
-		"eslint_d",
-    "black",
-		"flake8",
 	},
 })

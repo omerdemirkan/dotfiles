@@ -11,11 +11,18 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 null_ls.setup({
 	sources = {
+		-- formatting.black,
+		diagnostics.eslint_d,
+		diagnostics.flake8,
+		--                .with({
+		-- 	extra_args = { "--max-line-length", "140" },
+		-- }),
+		diagnostics.mypy,
 		formatting.prettier,
 		formatting.stylua,
-		formatting.black,
-    formatting.flake8,
-		diagnostics.eslint_d,
+		-- formatting.black.with({
+		-- 	extra_args = { "--line-length", "140", "--skip-string-normalization" },
+		-- }),
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
@@ -31,6 +38,7 @@ null_ls.setup({
 							return client.name == "null-ls"
 						end,
 						bufnr = bufnr,
+						async = false,
 					})
 				end,
 			})

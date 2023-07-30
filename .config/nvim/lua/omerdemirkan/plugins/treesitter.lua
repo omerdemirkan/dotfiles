@@ -37,6 +37,7 @@ treesitter.setup({
 		"rust",
 		"markdown",
 		"markdown_inline",
+		"yaml",
 	},
 	-- auto install above language parsers
 	auto_install = true,
